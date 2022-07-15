@@ -11,6 +11,9 @@
 		AF80DBD0287EAA66008AF38C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF80DBCF287EAA66008AF38C /* ContentView.swift */; };
 		AF80DBD2287EAA68008AF38C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF80DBD1287EAA68008AF38C /* Assets.xcassets */; };
 		AF80DBD5287EAA68008AF38C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF80DBD4287EAA68008AF38C /* Preview Assets.xcassets */; };
+		AF80DBDC287EAB12008AF38C /* HabitDiaryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF80DBDB287EAB12008AF38C /* HabitDiaryItem.swift */; };
+		AF80DBDE287EAC63008AF38C /* HabitDiaryJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF80DBDD287EAC63008AF38C /* HabitDiaryJSON.swift */; };
+		AF80DBE0287EB399008AF38C /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF80DBDF287EB399008AF38C /* AddView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		AF80DBCF287EAA66008AF38C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AF80DBD1287EAA68008AF38C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF80DBD4287EAA68008AF38C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AF80DBDB287EAB12008AF38C /* HabitDiaryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitDiaryItem.swift; sourceTree = "<group>"; };
+		AF80DBDD287EAC63008AF38C /* HabitDiaryJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitDiaryJSON.swift; sourceTree = "<group>"; };
+		AF80DBDF287EB399008AF38C /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +59,9 @@
 			children = (
 				AF80DBCD287EAA66008AF38C /* HabitDiarySwiftUIApp.swift */,
 				AF80DBCF287EAA66008AF38C /* ContentView.swift */,
+				AF80DBDF287EB399008AF38C /* AddView.swift */,
+				AF80DBDB287EAB12008AF38C /* HabitDiaryItem.swift */,
+				AF80DBDD287EAC63008AF38C /* HabitDiaryJSON.swift */,
 				AF80DBD1287EAA68008AF38C /* Assets.xcassets */,
 				AF80DBD3287EAA68008AF38C /* Preview Content */,
 			);
@@ -138,6 +147,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF80DBD0287EAA66008AF38C /* ContentView.swift in Sources */,
+				AF80DBDC287EAB12008AF38C /* HabitDiaryItem.swift in Sources */,
+				AF80DBE0287EB399008AF38C /* AddView.swift in Sources */,
+				AF80DBDE287EAC63008AF38C /* HabitDiaryJSON.swift in Sources */,
 				AF80DBCE287EAA66008AF38C /* HabitDiarySwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -195,7 +207,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -249,7 +261,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

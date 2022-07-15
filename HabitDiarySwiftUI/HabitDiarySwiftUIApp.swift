@@ -11,7 +11,7 @@ import SwiftUI
 struct HabitDiarySwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(habitDiary: HabitDiaryJSON())
         }
     }
 }

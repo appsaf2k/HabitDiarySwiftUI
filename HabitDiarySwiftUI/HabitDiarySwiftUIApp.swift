@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct HabitDiarySwiftUIApp: App {
+    
     var body: some Scene {
         WindowGroup {
-            ContentView(habitDiary: HabitDiaryJSON())
+            ContentView(habitData: HabitData())
         }
     }
 }

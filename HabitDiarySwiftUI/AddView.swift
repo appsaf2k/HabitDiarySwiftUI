@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct AddView: View {
-    @ObservedObject var habitDiary: HabitDiaryJSON
+    @ObservedObject var habit: HabitData
     @Environment (\.dismiss) var dismiss
     
     @State private var name = ""
@@ -52,8 +52,8 @@ struct AddView: View {
                     }
                     
                     Button("Save") {
-                        let item = HabitDiaryItem(name: name, text: text, action: action, time: time, date: date)
-                        habitDiary.items.insert(item, at: 0)
+                        let item = HabitItem(name: name, text: text, action: action, time: time, date: date)
+                        habit.items.insert(item, at: 0)
                         dismiss()
                     }
                 }
@@ -67,6 +67,6 @@ struct AddView: View {
         
 struct AddView_Previews: PreviewProvider {
     static var previews: some View {
-        AddView(habitDiary: HabitDiaryJSON())
+        AddView(habit: HabitData())
     }
 }

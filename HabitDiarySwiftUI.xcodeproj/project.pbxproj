@@ -11,8 +11,8 @@
 		AF80DBD0287EAA66008AF38C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF80DBCF287EAA66008AF38C /* ContentView.swift */; };
 		AF80DBD2287EAA68008AF38C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF80DBD1287EAA68008AF38C /* Assets.xcassets */; };
 		AF80DBD5287EAA68008AF38C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF80DBD4287EAA68008AF38C /* Preview Assets.xcassets */; };
-		AF80DBDC287EAB12008AF38C /* HabitDiaryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF80DBDB287EAB12008AF38C /* HabitDiaryItem.swift */; };
-		AF80DBDE287EAC63008AF38C /* HabitDiaryJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF80DBDD287EAC63008AF38C /* HabitDiaryJSON.swift */; };
+		AF80DBDC287EAB12008AF38C /* HabitItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF80DBDB287EAB12008AF38C /* HabitItem.swift */; };
+		AF80DBDE287EAC63008AF38C /* HabitData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF80DBDD287EAC63008AF38C /* HabitData.swift */; };
 		AF80DBE0287EB399008AF38C /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF80DBDF287EB399008AF38C /* AddView.swift */; };
 /* End PBXBuildFile section */
 
@@ -22,8 +22,8 @@
 		AF80DBCF287EAA66008AF38C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AF80DBD1287EAA68008AF38C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF80DBD4287EAA68008AF38C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		AF80DBDB287EAB12008AF38C /* HabitDiaryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitDiaryItem.swift; sourceTree = "<group>"; };
-		AF80DBDD287EAC63008AF38C /* HabitDiaryJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitDiaryJSON.swift; sourceTree = "<group>"; };
+		AF80DBDB287EAB12008AF38C /* HabitItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitItem.swift; sourceTree = "<group>"; };
+		AF80DBDD287EAC63008AF38C /* HabitData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitData.swift; sourceTree = "<group>"; };
 		AF80DBDF287EB399008AF38C /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -60,8 +60,8 @@
 				AF80DBCD287EAA66008AF38C /* HabitDiarySwiftUIApp.swift */,
 				AF80DBCF287EAA66008AF38C /* ContentView.swift */,
 				AF80DBDF287EB399008AF38C /* AddView.swift */,
-				AF80DBDB287EAB12008AF38C /* HabitDiaryItem.swift */,
-				AF80DBDD287EAC63008AF38C /* HabitDiaryJSON.swift */,
+				AF80DBDB287EAB12008AF38C /* HabitItem.swift */,
+				AF80DBDD287EAC63008AF38C /* HabitData.swift */,
 				AF80DBD1287EAA68008AF38C /* Assets.xcassets */,
 				AF80DBD3287EAA68008AF38C /* Preview Content */,
 			);
@@ -147,9 +147,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF80DBD0287EAA66008AF38C /* ContentView.swift in Sources */,
-				AF80DBDC287EAB12008AF38C /* HabitDiaryItem.swift in Sources */,
+				AF80DBDC287EAB12008AF38C /* HabitItem.swift in Sources */,
 				AF80DBE0287EB399008AF38C /* AddView.swift in Sources */,
-				AF80DBDE287EAC63008AF38C /* HabitDiaryJSON.swift in Sources */,
+				AF80DBDE287EAC63008AF38C /* HabitData.swift in Sources */,
 				AF80DBCE287EAA66008AF38C /* HabitDiarySwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

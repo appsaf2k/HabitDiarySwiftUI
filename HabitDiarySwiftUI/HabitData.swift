@@ -7,9 +7,9 @@
 
 import Foundation
 
-class HabitDiaryJSON: ObservableObject {
-
-    @Published var items = [HabitDiaryItem]() {
+class HabitData: ObservableObject {
+    
+    @Published var items = [HabitItem]() {
         didSet {
             if let encoded = try? JSONEncoder().encode(items) {
                 UserDefaults.standard.set(encoded, forKey: "Items")
@@ -19,7 +19,7 @@ class HabitDiaryJSON: ObservableObject {
     
     init() {
         if let savedItems = UserDefaults.standard.data(forKey: "Items") {
-            if let decodedItems = try? JSONDecoder().decode([HabitDiaryItem].self, from: savedItems) {
+            if let decodedItems = try? JSONDecoder().decode([HabitItem].self, from: savedItems) {
                 items = decodedItems
                 return
             }

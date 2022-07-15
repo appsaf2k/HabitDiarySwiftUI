@@ -8,17 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
-    @ObservedObject var habitDiary: HabitDiaryJSON
+    @ObservedObject var habitData: HabitData
     @State private var showingAddHabit = false
     @State private var showin = false
     @State private var showSheetEdit = false
     @Environment (\.dismiss) var dismiss
     
+    
     var body: some View {
         NavigationView {
             List {
-                ForEach(habitDiary.items) { item in
-                    NavigationLink(destination: VStack {
+                ForEach(habitData.items) { item in
+                    NavigationLink(destination:
+                                    VStack {
                         VStack {
                             Text(item.name)
                                 .font(.headline)
@@ -26,7 +28,6 @@ struct ContentView: View {
                             Text("\(item.date.formatted(date: .complete, time: .omitted))")
                                 .foregroundStyle(.secondary)
                         }
-                        
                         Text(item.text).padding()
                         Spacer()
                         
@@ -68,7 +69,7 @@ struct ContentView: View {
                 }
             }
             .sheet(isPresented: $showingAddHabit) {
-                AddView(habitDiary: habitDiary)
+                AddView(habit: habitData)
             }
             
         }
@@ -76,17 +77,17 @@ struct ContentView: View {
     
     
     func removeItems(at offsets: IndexSet){
-        habitDiary.items.remove(atOffsets: offsets)
+        habitData.items.remove(atOffsets: offsets)
     }
     
     func move(from source: IndexSet, to destination: Int) {
-        habitDiary.items.move(fromOffsets: source, toOffset: destination)
+        habitData.items.move(fromOffsets: source, toOffset: destination)
     }
     
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(habitDiary: HabitDiaryJSON())
+        ContentView(habitData: HabitData())
     }
 }
